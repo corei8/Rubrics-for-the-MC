@@ -1,0 +1,294 @@
+% !TEX program = lualatex
+
+\documentclass[11pt]{amsbook}
+\usepackage{geometry}
+%showframe
+\geometry{
+        paperheight=8.5in,
+        paperwidth=5.5in,
+        top=0.5in,
+        bottom=0.5in,
+        inner=0.5in,
+        outer=0.5in,
+}
+\usepackage{layout}
+\usepackage[letterspace=500]{microtype}
+\usepackage[T1]{fontenc}
+\usepackage[
+usefilenames,
+RMstyle={Text,Semibold},
+SSstyle={Text,Semibold},
+TTstyle={Text,Semibold},
+%DefaultFeatures={Ligatures=Common}
+]{plex-otf} %
+\usepackage[latin]{babel}
+\usepackage{fontspec}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{xcolor}
+\usepackage{stackengine}
+\usepackage{tabularx}
+\usepackage[most]{tcolorbox}
+\usepackage{longtable}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\renewcommand\stacktype{L}
+\renewcommand\stackalignment{c}
+\setstackgap{L}{8pt}
+
+% CUSTOM FUNCTIONS
+
+\newcommand{\subword}[2]{%
+        \noindent
+        \begin{justifying}
+                \stackunder{\large\ #1}{\tiny\ #2}%
+        \end{justifying}
+}
+
+\newcommand{\centerRubric}[1]{%
+        \begin{center}
+                \noindent
+                \footnotesize
+                \color{red}
+                \textit{S. }
+                #1
+        \end{center}
+}
+
+\newcommand{\centerRubricAlt}[1]{%
+        \begin{center}
+                \noindent
+                \footnotesize
+                \color{red}
+                #1
+        \end{center}
+}
+
+\newcommand{\rubric}[1]{%
+        \begin{footnotesize}
+                \color{red}
+                #1
+        \end{footnotesize}
+}
+
+\newcommand{\server}[1]{%
+        \noindent
+        #1
+}
+
+\newcommand{\priest}[1]{%
+        \begin{raggedright}
+                \textit{\noindent\footnotesize #1}
+        \end{raggedright}
+}
+
+\newcommand{\p}{%
+        \noindent
+        \textit{\color{red}\small P.}
+}
+
+\newcommand{\s}{%
+        \noindent
+        \textit{\color{red}\small S.}
+}
+
+\newcommand{\DV}{%
+        \noindent
+        \p \priest{Dóminus vobíscum.} \s \server{Et cum spíritu tuo.}
+}
+
+\newcommand{\pp}{%
+        \color{red}*\textit{\small P.}
+}
+
+\newcommand{\sss}{%
+        \color{red}*\textit{\small S.}
+}
+
+\pagestyle{plain}
+
+\begin{document}
+\stackText\
+\setlength{\tabcolsep}{0pt}
+
+\vspace{-0.25in}
+
+\begin{center}
+        \begin{tcolorbox}[
+                frame hidden, 
+                colback=red, 
+                sharp corners, 
+                enhanced, 
+                colupper=white, 
+                halign=flush center,
+                fontlower=\rmfamily\scseries\
+                ]
+                \Huge\MakeUppercase{Mass Server's Card}    
+        \end{tcolorbox}
+        \hrule\smallskip
+        \textls{\MakeUppercase{\small Queen{ }{ }of{ }{ }ll{ }{
+        }Saints{ }{ }Academy}}
+        \smallskip\hrule\
+\end{center}
+
+\vspace{0.05in}
+
+% PSALM
+\begin{longtable}{@{}l@{}p{4.32in}@{}}
+        \multicolumn{2}{c}{\footnotesize\color{red}\textit{S.} Blesses himself with the priest.} \\
+        %\p\   & \priest{In nómine Patris, {\color{red} \maltese} et Fílii, et Spíritus Sancti. Amen.} \\
+        \pp\  & \priest{Introíbo ad altáre Dei.} \\
+        \sss\ & \server{\subword{Ad}{Ahd} \subword{Deum}{Day´oom} \subword{qui}{kwee} \subword{l\ae tíficat}{lay-tee´fee-kaht} \subword{juventútem}{yoo-ven-too´tem} \subword{meam.}{may´ahm.}} \\
+        \pp\  & \priest{Júdica me, Deus, \ldots et dolóso érue me.} \\
+        \sss\ & \server{\subword{Quia}{Quee´ah} \subword{tu}{too} \subword{es,}{es,} \subword{Deus,}{Day´oos,} \subword{fortitúdo}{for-tee-too´doh} \subword{mea:}{may´ah:} \subword{quare}{quah´ray} \subword{me}{may} \subword{repulísti,}{ray-poo-lee´stee,} \subword{et}{ett} \subword{quare}{quah´ray} \subword{tristis}{tree´stees} \subword{incédo,}{een-chay´doh,} \subword{dum}{doom} \subword{afflígit}{ahf-flee´jeet} \subword{me}{may} \subword{inimícus?}{een-ee-mee´koos?}} \\
+        \pp\  & \priest{Emítte lucem tuam \ldots in tabernácula tua.} \\
+        \sss\ & \server{\subword{Et}{Et} \subword{introíbo}{een-troh-ee´boh} \subword{ad}{ahd} \subword{altáre}{ahl-tah´ray} \subword{Dei:}{Day´ee:} \subword{ad}{ahd} \subword{Deum}{Day´oom} \subword{qui}{kwee} \subword{l\ae tíficat}{lay-tee´fee-kaht} \subword{juventútem}{yoo-ven-too´tem} \subword{meam.}{may´ahm.}} \\
+        \pp\  & \priest{Confitébor tibi in cíthara, \ldots quare contúrbas me?} \\
+        \sss\ & \server{\subword{Spera}{Spay´rah} \subword{in}{in} \subword{Deo,}{Day´oh,} \subword{quóniam}{quoh´nee-ahm} \subword{adhuc}{ahd´hook} \subword{confitébor}{kon-fee-tay´bore} \subword{illi:}{eel´lee:} \subword{salutáre}{sah-loo-tah´ray} \subword{vultus}{vool´toos} \subword{mei,}{may´ee,} \subword{et}{ett} \subword{Deus}{Day´oos} \subword{meus.}{may´oos.}} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}\textit{S.} Bows his head with the priest.} \\
+        \pp\  & \priest{Glória Patri, et Fílio, et Spirítui Sancto.} \\
+        \sss\ & \server{\subword{Sicut}{See´koot} \subword{erat}{air´rot} \subword{in}{in} \subword{princípio,}{preen-chee´pee-oh,} \subword{et}{ett} \subword{nunc,}{noonk,} \subword{et}{ett} \subword{semper:}{sem´pair:} \subword{et}{ett} \subword{in}{in} \subword{s\'\ae cula}{say´koo-lah} \subword{sæculórum.}{say-koo-lore´room.} \subword{Amen.}{Ah´men.}} \\
+        \multicolumn{2}{l}{\footnotesize\color{red}* Omitted at Masses for the Dead.} \\ 
+        \vspace{-.25in}
+\end{longtable}
+
+% PSALM 42
+\begin{longtable}{@{}l@{}p{4.37in}@{}}
+        \p & \priest{Introíbo ad altáre Dei.} \\
+        \s & \server{\subword{Ad}{Ahd} \subword{Deum}{Day´oom} \subword{qui}{kwee} \subword{l\ae tíficat}{lay-tee´fee-kaht} \subword{juventútem}{yoo-ven-too´tem} \subword{meam.}{may´ahm.}} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}\textit{S.} Blesses himself with the priest.} \\
+        \p & \priest{Adjutórium nostrum {\color{red} \maltese} in nómine Dómini.} \\
+        \s & \server{\subword{Qui}{Quee} \subword{fecit}{fay´cheet} \subword{cælum}{chay´loom} \subword{et}{ett} \subword{terram.}{tair´rahm.}} \\
+        \p & \priest{Confíteor \ldots ad Dóminum Deum nostrum.} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}\textit{S.} Bows towards the priest and says:} \\
+        \s & \server{\subword{Misereátur}{Meez-zay-ray-ah´toor} \subword{tui}{too´ee} \subword{omnípotens}{ohm-nee´poh-tenz} \subword{Deus,}{Day´oos,} \subword{et}{ett} \subword{dimíssis}{dee-mees´ees} \subword{peccátis}{pay-kah´tees} \subword{tuis,}{too´ees,} \subword{perdúcat}{pair-doo´kott} \subword{te}{tay} \subword{ad}{ahd} \subword{vitam}{vee´tahm} \subword{ætérnam.}{ay-tair´nahm.}} \\
+        \p & \priest{Amen.} \\
+\end{longtable}
+
+% CONFITEOR, VERSICLES, RESPONSES
+\begin{longtable}{@{}l@{}p{4.37in}@{}}
+        \multicolumn{2}{c}{\footnotesize\color{red}\textit{S.} Bows with head and shoulders towards the altar and says:} \\
+        \s & \server{\subword{Confíteor}{Kon-fee´tay-ore} \subword{Deo}{Day´oh} \subword{omnipoténti,}{ohm-nee-poh-ten´tee,} \subword{beát\ae}{bay-ah´tay} \subword{Marí\ae}{Mah-ree´ay} \subword{semper}{sem´pair} \subword{Vírgini,}{Veer´jee-nee,} \subword{beáto}{bay-ah´toh} \subword{Michaéli}{Mee-kah-ay´lee} \subword{Archángelo,}{Ark-ahn´jay-loh,} \subword{beáto}{bay-ah´toh} \subword{Joánni}{Yoh-ahn´nee} \subword{Baptíst\ae,}{Bahp-tee´stay,} \subword{sanctis}{sahnk´tees} \subword{Apóstolis}{Ah-poh´stoh-lis} \subword{Petro}{Pay´troh} \subword{et}{ett} \subword{Paulo,}{Pow´loh,} \subword{ómnibus}{ohm´nee-boos} \subword{Sanctis,}{Sahnk´tees,} \subword{et}{ett} \subword{tibi,}{tee´bee,} \subword{pater:}{pah´tair:} \subword{quia}{que´ah} \subword{peccávi}{pay-kah´vee} \subword{nimis}{nee´mees} \subword{cogitatióne,}{koh-jee-tahd-see-oh´nay} \subword{verbo}{vair´boh} \subword{et}{ett} \subword{ópere:}{oh´pay-ray:} \subword{mea}{may´ah} \subword{culpa,}{kool´pah,} \subword{mea}{may´ah} \subword{culpa,}{kool´pah,} \subword{mea}{may´ah} \subword{máxima}{mahk´see-mah} \subword{culpa.}{kool´pah.} \subword{Ideo}{Ee´day-oh} \subword{precor}{pray´kore} \subword{beátam}{bay-ah´tam} \subword{Maríam}{Mah-ree´ahm} \subword{semper}{sem´pair} \subword{Vírginem,}{Veer´jee-nem,} \subword{beátum}{bay-ah´tuum} \subword{Michaélem}{Mee-kah-ay´lem} \subword{Archángelum,}{Ark-ahn´jay-loom,} \subword{beátum}{bay-ah´toom} \subword{Joánnem}{Yo-ahn´nem} \subword{Baptístam,}{Bahp-tee´stahm,} \subword{sanctos}{sahnk´tohs} \subword{Apóstolos}{Ah-poh´stoh-lohs} \subword{Petrum}{Pay´troom} \subword{et}{ett} \subword{Paulum,}{Pow´loom,} \subword{omnes}{ohm´nays} \subword{Sanctos,}{Sahnk´tohs,} \subword{et}{ett} \subword{te,}{tay,} \subword{pater,}{pah´tair,} \subword{oráre}{oh-rah´ray} \subword{pro}{proh} \subword{me}{may} \subword{ad}{ahd} \subword{Dóminum,}{Doh´mee-noom,} \subword{Deum}{Day´oom} \subword{nostrum.}{noh´stroom.}} \\
+        \p & \priest{Misereátur \ldots \ae térnam.} \s \server{Amen.} \\
+        \p & \priest{Indulgéntiam \ldots Dóminus.} \s \server{Amen.} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}For a bishop, \textit{S.} presents the maniple.} \\
+        \p & \priest{Deus, tu convérsus vivificábis nos.} \\
+        \s & \server{\subword{Et}{Ett} \subword{plebs}{playbs} \subword{tua}{too´ah} \subword{lætábitur}{lat-tah´bee-toor} \subword{in}{in} \subword{te.}{tay.}} \\
+        \p & \priest{Osténde nobis, Dómine, misericórdiam tuam.} \\
+        \s & \server{\subword{Et}{Ett} \subword{salutáre}{sah-loo-tah´ray} \subword{tuum}{too´oom} \subword{da}{dah} \subword{nobis.}{noh´bees.}} \\
+        \p & \priest{Dómine, exáudi oratiónem meam.} \\
+        \s & \server{\subword{Et}{Ett} \subword{clamor}{clah´mohr} \subword{meus}{may´oos} \subword{ad}{ahd} \subword{te}{tay} \subword{véniat.}{vay´nee-aht.}} \\
+        \p & \priest{Dóminus vobíscum.} \\
+        \s & \server{\subword{Et}{Ett} \subword{cum}{koom} \subword{spíritu}{spee´ree-too} \subword{tuo.}{too´oh.}} \\
+        \p & \priest{Orémus.} \\
+\end{longtable}
+
+% KYRIE
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}}
+        \multicolumn{2}{c}{\footnotesize\color{red}At the middle of the altar, after the reading of the \textit{Introit:}} \\
+        \p \priest{K\'yrie, eléison.} & \s \server{\subword{K\'yrie,}{Kee´ree-ay,} \subword{eléison.}{ay-lay´ee-sohn.}} \\
+        \p \priest{K\'yrie, eléison.} & \\
+        \s \server{\subword{Christe,}{Kree´stay} \subword{eléison.}{ay-lay´ee-sohn.}} & \p \priest{Christe, eléison.} \\
+        \s \server{Christe, eléison.} & \\
+        \p \priest{K\'yrie, eléison.} & \s \server{K\'yrie, eléison.} \\
+        \p \priest{K\'yrie, eléison.} & \\
+\end{longtable}
+
+% DOMINUS VOBISCUM / PAX VOBIS
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}}    
+        \multicolumn{2}{c}{\footnotesize\color{red}After the \textit{K\'yrie eléison} or after the \textit{Glória} if this is said:} \\
+        \p \priest{Dóminus vobíscum.} & \s \server{Et cum spíritu tuo.}   \\
+\end{longtable}    
+
+%\begin{spacing}{.1}
+        
+%\end{spacing}
+
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}}    
+                                      \multicolumn{2}{c}{\footnotesize\color{red}Or, for a bishop, after the \textit{Glória} is said:} \\
+        \p \priest{Pax vobis.}        & \s \server{Et cum spíritu tuo.} \\
+\end{longtable}    
+
+% ORATIONS
+\p \priest{Orémus, etc.} \s \server{Amen.} \\
+\p \priest{Orémus, etc.} \\
+\s \server{Amen.} -- \rubric{After the last prayer when there are more than one.} \\
+
+% AFTER EPISTLE --> AFTER CREED
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}}
+        \rubric{After the Epistle: } & \s \server{\subword{Deo}{Day´oh} \subword{grátias.}{grahd´see-ahs.}} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}\s Goes to the Epistle side to remove the book.} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}At the beginning of the Gospel:} \\
+        \p \priest{Dóminus vobíscum.}                & \s \server{Et cum spíritu tuo.}   \\
+        \p \priest{Sequéntia Sancti Evangélii, etc.} & \s \server{\subword{Glória}{Gloh´ree-ah} \subword{tibi,}{tee´bee,} \subword{Dómine.}{Doh´mee-nay.}} \\
+        \rubric{After the Gospel:}                   & \s \server{\subword{Laus}{Louse} \subword{tibi,}{tee´bee,} \subword{Christe.}{Kree´stay.}}\\
+        \multicolumn{2}{c}{\footnotesize\color{red}After the Gospel or after the \textit{Credo} if this is said:} \\
+        \p \priest{Dóminus vobíscum.}                & \s \server{Et cum spíritu tuo.}   \\
+\end{longtable}
+
+% SUSCIPIAT
+\begin{longtable}{@{}l@{}p{4.37in}@{}}
+        \multicolumn{2}{c}{\footnotesize\color{red}\textit{S.} After the \textit{Lavábo} the priest says towards the people:} \\
+        \p & \priest{Oráte, fratres \ldots Patrem onmipoténtem.} \\
+        \s & \server{\subword{Suscípiat}{Soo-shee´pee-aht} \subword{Dóminus}{Doh´mee-noos} \subword{sacrifícium}{sah-kree-fee´chee-oom} \subword{de}{day} \subword{mánibus}{mah´nee-boos} \subword{tuis,}{too-ees,} \subword{ad}{ahd} \subword{laudem}{loud´em} \subword{et}{ett} \subword{glóriam}{gloh´ree-ahm} \subword{nominis}{noh´mee-nees} \subword{sui,}{soo´ee,} \subword{ad}{ahd} \subword{utilitátem}{oo-tee-lee-tah´tem} \subword{quoque}{quoh´quay} \subword{nostram,}{noh´strahm,} \subword{totiúsque}{tohd-see-oos´quay} \subword{Ecclésiæ}{Ay-clay´zee-ay} \subword{suæ}{soo´ay} \subword{sanctæ.}{sahnk´tay.}} \\
+\end{longtable}
+
+% PREFACE --> DOMINUS VOBISCUM AFTER COMMUNION
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}}
+        \multicolumn{2}{c}{\footnotesize\color{red}At the Preface:} \\
+        \p \priest{Per ómnia sǽcula sæculórum.}           & \s \server{Amen.} \\
+        \p \priest{Dóminus vobíscum.}                     & \s \server{Et cum spíritu tuo.} \\
+        \p \priest{Sursum corda.} & \s \server{\subword{Habémus}{Ah-bay´moos} \subword{ad}{ahd} \subword{Dóminum.}{Doh´mee-noom.}} \\
+        \p \priest{Grátias agámus Dómino, Deo nostro.}    & \s \server{\subword{Dignum}{Deen´yoom} \subword{et}{ett} \subword{justum}{yoo´stoom} \subword{est.}{est.}} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}Before the \textit{Pater Noster} the priest genuflects and says:} \\
+        \p \priest{Per ómnia sǽcula sæculórum.}           & \s \server{Amen.} \\
+        {\footnotesize\color{red}At the end of the \textit{Pater Noster}:} & \s \subword{Sed}{Sed} \subword{líbera}{lee´bay-rah} \subword{nos}{nohs} \subword{a}{ah} \subword{malo.}{mah´loh.} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}After the breaking of the Sacred Host:} \\
+        \p \priest{Per ómnia sǽcula sæculórum.}           & \s \server{Amen.}               \\
+        \p \priest{Pax Dómini sit semper vobíscum.}       & \s \server{Et cum spíritu tuo.} \\
+        \multicolumn{2}{c}{\footnotesize\color{red}As the priest takes up the chalice, if Communion is distributed:} \\        
+        \s \server{Confíteor, etc.} \rubric{(See page 2)} & \\
+        \p \priest{Misereátur \ldots \ae térnam.}         & \s \server{Amen.} \\
+        \p \priest{Indulgéntiam \ldots Dóminus.}          &  \s \server{Amen.} \\
+\end{longtable}
+
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}}
+        \multicolumn{2}{c}{\footnotesize\color{red}At the center of the altar after the ablutions:} \\
+        \p \priest{Dóminus vobíscum.}                     & \s \server{Et cum spíritu tuo.}   \\
+\end{longtable}
+
+% POSTCOMMUNION
+%\pagebreak
+\p \priest{Orémus, etc.} \s \server{Amen.} \\
+\p \priest{Orémus, etc.} \\
+\s \server{Amen.} -- \rubric{After the last prayer when there are more than one.} \\
+
+% ITE MISSA EST --> END
+\begin{longtable}{@{}p{2.25in}@{}p{2.25in}@{}} 
+        \multicolumn{2}{c}{\footnotesize\color{red}Returning to the center of the altar:}            \\
+        \p \priest{Dóminus vobíscum.}                             & \s \server{Et cum spíritu tuo.}   \\
+        \p \priest{Ite Missa est.}                                & \s \server{Deo grátias.}         \\
+        \rubric{\ldots or, if there is no \textit{Glória}:}       &                                  \\
+        \p \priest{Benedicámus Dómino.}                           & \s \server{Deo grátias.}         \\
+        \rubric{\ldots or, in Masses for the Dead:}               &                                  \\
+        \p \priest{Requiéscant in pace.}                          & \s \server{Amen.}                \\
+        \multicolumn{2}{c}{\footnotesize\color{red}Before the Blessing, for a bishop:}               \\
+        \multicolumn{2}{l}{\p \priest{Sit nomen Dómini benedíctum.}}                                 \\
+        \multicolumn{2}{l}{\s \server{\subword{Ex}{Eks} \subword{hoc}{ohk} \subword{nunc}{noonk} \subword{et}{ett} \subword{usque}{oos´quay} \subword{in}{in} \subword{s\'\ae culum.}{say´coo-loom.}}} \\
+        \multicolumn{2}{l}{\p \priest{Adjutórium nostrum in nómine Dómini.}}                         \\
+        \multicolumn{2}{l}{\s \server{Qui fecit c\ae lum et terram.}}                                \\
+        \multicolumn{2}{c}{\footnotesize\color{red}After the Blessing:}                              \\
+        \p \priest{\ldots Pater, et Fílius, et Spíritus Sanctus.} & \s \server{Amen.}                \\
+        \multicolumn{2}{c}{\footnotesize\color{red}At the beginning of the last Gospel:}             \\
+        \p \priest{Dóminus vobíscum.}                             & \s \server{Et cum spíritu tuo.}   \\
+        \p \priest{Inítium or Sequéntia, etc.}                    & \s \server{Glória tibi, Dómine.} \\
+        \rubric{After the last Gospel:}                           & \s \server{Deo grátias.}         \\
+\end{longtable}
+
+%\begin{figure}[b]
+        %\includegraphics[scale=.18]{mhtlogo.png}
+        %\centering
+        %\vspace{1in}
+%\end{figure}
+
+\end{document}
