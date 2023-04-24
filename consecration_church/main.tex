@@ -4,8 +4,11 @@
 
 \usepackage{enumitem}
 \usepackage{rubrics}
+\usepackage{microtype}
 \usepackage{booktabs}
 \usepackage{csquotes}
+\usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
+\AtBeginEnvironment{quote}{\smaller}% Step font down one size relative to current font.
 \usepackage[backend=biber,style=reading,style=verbose-ibid]{biblatex}
 \addbibresource{~/Library/texmf/bibtex/bib/rubrics.bib}
 
@@ -15,7 +18,6 @@
     tris, et Fí\cross lii, et Spíritus \cross\ sancti. \rbar Amen.
 \end{quote}
 }
-
 \newcommand\crossplan{
 \begin{center}
     \begin{tabular}{ | l c r | }
@@ -28,6 +30,8 @@
 \end{center}
 }
 
+\newcommand\src{\textsc{s.r.c.}}
+
 \begin{document}
 \maketitle
 
@@ -36,47 +40,48 @@
 \rubric This part of the ceremony takes place the evening before the
 consecration. The candles on the table in the oratory are lit.
 
-\rubric Assisting clergy with surplices, preceded by AC with holy-water, go to
-the entrance of the oratory to receive B, vested in rochet and mantelletta,
-with biretta. Bishop removes biretta at the entrace and receives holy water
-from the rector.\footcite[The Bishop does not sprinkle the clergy, as the
-rubrics prescribe, if he be not the Ordinary. See][note 1, p. 28.]{consecranda}
+\rubric Assisting clergy with surplices, preceded by a server with holy-water,
+go to the entrance of the oratory to receive B, vested in rochet and
+mantelletta, with biretta. The Bishop removes biretta at the entrace and
+receives holy water from the rector.\footcite[The bishop does not sprinkle the
+clergy, as the rubrics prescribe, if he be not the Ordinary. See][note 1, p.
+28.]{consecranda}
 
-\rubric If there is an altar in the oratory, Bishop kneels on the lowest step before
-it for a short time, then rises and goes to the table, dons a red stole, and
-places\footnote{The bishop must observe the order of dignity: apostles,
-martyrs, confessors, etc. as can be found in the Litany of the Saints.} the
-relics into the reliquary with the three grains of incense and the attest of
-the consecration.
+\rubric If there is an altar in the oratory, the Bishop kneels on the lowest
+step before it for a short time, then rises and goes to the table, dons a red
+stole, and places\footnote{The bishop must observe the order of dignity:
+apostles, martyrs, confessors, etc. as can be found in the Litany of the
+Saints.} the relics into the reliquary with the three grains of incense and the
+attest of the consecration.
 
 \rubric After putting the lid on the reliquary, Bishop folds around it a red silk
 ribbon that passes over the top, bottom and four sides of the reliquary and is
 tied at the top. Sealing wax is dropped over the knot and is sealed with the
 consecrator's signet.
 
-\rubric Bishop carries the reliquary with both hands and places it in the urn, locks
-the urn and removes his stole. Bishop kneels for a short time in prayer before the
-reliquaries, rises and is accompanied by the clergy to the door, where he
-departs.\footnote{The bishop may remain to recite the office with the clergy,
-though the length of the ceremony of the next day may discourage the bishop
-from doing so.}
+\rubric The Bishop carries the reliquary with both hands and places it in the
+urn, locks the urn and removes his stole. The Bishop kneels for a short time in
+prayer before the reliquaries, rises and is accompanied by the clergy to the
+door, where he departs.\footnote{The bishop may remain to recite the office
+with the clergy, though the length of the ceremony of the next day may
+discourage the bishop from doing so.}
 
-\rubric Clergy return to the relics and recite Matins and Lauds \textit{De
+\rubric The clergy return to the relics and recite Matins and Lauds \textit{De
 communi plurimorum martyrum.} The lessons of the first nocturn are
 \textit{Fratres, debitores,} etc.; of the second nocturn \textit{Quotiescumque,
 fratres,} etc.; of the third nocturn \textit{Dominus ac redemptor.} The oration
 is \textit{Deus, qui conspicis,} without mentioning the name of the martyrs,
 found in the Breviary on October 14. No commemorations are made because it is a
 votive office\footnote{The office \textit{Dedicationis Ecclesi\ae} cannot be
-recited on this occasion --- S.R.C., Dec. 7, 1844, n. 2868. Neither does the
+recited on this occasion --- \src, Dec. 7, 1844, n. 2868. Neither does the
 recitation of the office \textit{Sanctorum Martyrum} on this occasion dispense
 from the recitation of the current office. The axiom \textit{``Officium pro
-officio valet''} cannot here be applied. --- S.R.C., Sept. 16, 1881, n. 3532 ad
+officio valet''} cannot here be applied. --- \src, Sept. 16, 1881, n. 3532 ad
 II.}.
 
 \rubric During the night two candles should be kept burning before the
 relics.\footnote{It is not necessary to repeat Matins and Lauds so that the
-watch be kept throughout the night --- S.R.C., Feb. 22, 1888, n. 3686 ad III.}
+watch be kept throughout the night --- \src, Feb. 22, 1888, n. 3686 ad III.}
 Martinucci says that in Rome two, four or six lay persons continue the watch
 until the relics are carried to the church on the following morning.
 
@@ -97,42 +102,44 @@ Penitential Psalms at the beginning of the function, which are recited
 \textit{ob defunctum cantorum} it is impssible to do so, in which case they
 should be recited \textit{recto tono.} 
 
-\rubric The CB and ACs should stand opposite to the Consecrator, except when
-they lead the procession and when the Consecrator is engaged at the altar, in
-which case they stand \textit{in plano} on the Gospel side; they always
-accompany the Consecrator when moving from one altar to another.
+\rubric The cross-bearer and acolytes should stand opposite to the Consecrator,
+except when they lead the procession and when the Consecrator is engaged at the
+altar, in which case they stand \textit{in plano} on the Gospel side; they
+always accompany the Consecrator when moving from one altar to another.
 
 \rubric The miter and crosier bearers always stand or move behind the Consecrator.
 
 \section{From the Beginning to the Blessing of the Water.}
 
 \rubric The function ought to be begun at an early hour. All who are to take
-part in the ceremony enter the sacristy or church. SD and D vest in amice, alb
-and cincture, D dons a white stole. D (referred to as the ``Guard'') who is to
-guard the church vests in the same manner as the officianting D.
+part in the ceremony enter the sacristy or church. Subdeacon and Deacon vest in
+amice, alb and cincture, the Deacon dons a white stole. The
+Deacon\footnote{Referred to in these notes as the ``Guard''.} who is to guard
+the church vests in the same manner as the officiating Deacon.
 
 \rubric The laity are not permitted into the church, and all doors but the main
-doors are locked. D and SD flank the faldstool, which stands in the middle of
-the church, facing the main doors. CB and ACs stand near D, facing the doors.
-Assisting clergy in surplice and the Guard go to the entrance and receive B, in
-the mantelletta, who is lead immediately to the faldstool. Bishop sits and orders
-the twelve crosses to be lighted. The clergy arrange themselves in rows behind
-and on the sides of the faldstool.
+doors are locked. Deacon and Subdeacon flank the faldstool, which stands in the
+middle of the church, facing the main doors. Cross-bearer and acolytes stand
+near the Deacon, facing the doors. Assisting clergy in surplice and the Guard
+go to the entrance and receive the Bishop, in the mantelletta, who is lead
+immediately to the faldstool. The Bishop sits and orders the twelve crosses to
+be lighted. The clergy arrange themselves in rows behind and on the sides of
+the faldstool.
 
 \rubric As soon as the candles have been lighted all go to the place where the
 relics were kept overnight:
 
 \begin{enumerate}
 
-    \item CB and ACs;
+    \item Cross-bearer and acolytes;
 
     \item Chanters\footnote{If the chanters are not vested in cassock and
         surplice they precede the cross-bearer. See \cite{consecranda} Note 2,
         p. 31.} and clergy, two by two;
 
-    \item Bishop between D and SD;
+    \item Bishop between Deacon and Subdeacon;
 
-    \item B's attendants
+    \item The Bishop's attendants
 
 \end{enumerate}
 
@@ -145,134 +152,138 @@ chanters go to the lectern. Bishop and minsters go to the altar and kneel before
 relics a short time in prayer; all kneel with them.
 
 \rubric MC1 signals all to rise; Bishop goes to faldstool and sits down with
-biretta, facing the door of the chapel, D and SD flanking. Once Bishop is seated MC2
-distributes vestments to the clergy who will vest B; the clergy approach the
-faldstool and stand a short distance from it. Book- and Candle-bearers take
-Pontifical and candle and stand behind Bishop and to his left. Altar boys stand by
-ready with ewer, basin and towel.
+biretta, facing the door of the chapel, Deacon and Subdeacon flanking. Once
+the Bishop is seated MC2 distributes vestments to the clergy who will vest the
+Bishop; the clergy approach the faldstool and stand a short distance from it.
+Book- and candle-bearers take Pontifical and candle and stand behind the Bishop
+and to his left. Servers stand by ready with ewer, basin and towel.
 
-\rubric MC1 signals Bishop to remove biretta, rise and turn towards the relics; D
-and SD switch sides. Bishop \textit{reads} in a loud tone \textit{Ne reminiscaris},
-after which chanters and clergy slowly \textit{recite} the seven Pentitential
-Psalms.
+\rubric MC1 signals the Bishop to remove biretta, rise and turn towards the
+relics; Deacon and Subdeacon switch sides. The Bishop \textit{reads} in a loud tone
+\textit{Ne reminiscaris}, after which chanters and clergy slowly
+\textit{recite} the seven Pentitential Psalms.
 
-\rubric Bishop sits immediately after reading \textit{Ne reminiscaris.} D removes
-B's pectoral cross and mantelletta. Bishop dons biretta and his hands are washed,
-altar-boys standing.\footcite[See][note 1, p. 39.]{consecranda}
+\rubric The Bishop sits immediately after reading \textit{Ne reminiscaris.} The
+Deacon removes the Bishop's pectoral cross and mantelletta. The Bishop dons
+biretta and his hands are washed, altar-boys standing.\footcite[See][note 1, p.
+39.]{consecranda}
 
-\rubric After the hand-washing, D takes biretta and the vesters approach B, who
-stands. D and SD vest Bishop in amice, alb, cincture, pectoral cross, white stole
-and cope. D imposes miter\footnote{It seems that Bishop should be sitting at this
-time, since he does not normally receive the miter at the faldstool while
-standing.} and Bishop receives crosier. Bishop sits with D and SD and they read
-alternately\footcite[The bishop usually reads the first verse of each psalm and
-recites the verse \textit{Gloria Patri.}][note 3, p. 39.]{consecranda} the
-seven penitential psalms. Once the chanters have finished the seventh psalm B
-alone repeats \textit{Ne reminiscaris.}
+\rubric After the hand-washing, the Deacon takes biretta and the vesters
+approach the Bishop, who stands. Deacon and Subdeacon vest the Bishop in amice,
+alb, cincture, pectoral cross, white stole and cope. The Deacon imposes
+miter\footnote{It seems that Bishop should be sitting at this time, since he
+does not normally receive the miter at the faldstool while standing.} and the
+Bishop receives crosier. The Bishop sits with the Deacon and the Subdeacon and
+they read alternately\footcite[The bishop usually reads the first verse of each
+psalm and recites the verse \textit{Gloria Patri.}][note 3, p.
+39.]{consecranda} the seven penitential psalms. Once the chanters have finished
+the seventh psalm, the Bishop alone repeats \textit{Ne reminiscaris.}
 
 \rubric After the antiphon has been repeated all go to the main doors of the
 church:
 
 \begin{enumerate}
 
-    \item CB and ACs;
+    \item Cross-bearer and acolytes;
 
     \item Chanters, two by two;\footnote{If the chanters are not vested in
         cassock and surplice they precede the cross-bearer.}
 
     \item Clergy two by two;
 
-    \item Bishop between D and SD;
+    \item Bishop between Deacon and Subdeacon;
 
     \item Miter and crosier, book (with \textit{Pontificale}) and candle
         bearers.
 
 \end{enumerate}
 
-CB and ACs stand at the right side of the entrance so that Bishop can see the cross;
-Chanters stand neaar the lectern; Clergy and clerics stand in semicircular
-rows; Bishop stands with ministers in front of the door, facing it.
+Cross-bearer and acolytes stand at the right side of the entrance so that the
+Bishop can see the cross; Chanters stand neaar the lectern; clergy and clerics
+stand in semicircular rows; the Bishop stands with ministers in front of the
+door, facing it.
 
 \rubric Crosier and miter away. Bishop intones \textit{Adesto Deus unus} (these
-three words only) which the chanters continue to the end. Bishop afterwards says the
-oration \textit{Actiones nostras}. After the oration Bishop receives miter and
-kneels before the faldstool. All kneel at their places during the singing of
-the litany, which the chanters begin once Bishop kneels. The litany is not doubled
-and all present sing the responses. All rise after the response \textit{Exaudi
-nos Domine} after the second \textit{Propitius esto}
+three words only) which the chanters continue to the end. Bishop afterwards
+says the oration \textit{Actiones nostras}. After the oration Bishop receives
+miter and kneels before the faldstool. All kneel at their places during the
+singing of the litany, which the chanters begin once Bishop kneels. The litany
+is not doubled and \textit{all present} sing the responses. All rise after the
+response \textit{Exaudi nos Domine} after the second \textit{Propitius esto.}
 
 \section{Blessing of the Water.}
 
 \rubric Bishop receives the crosier and goes to the large table accompanied by
-ministers, miter, crosier, book and candle bearers. Bishop stands in such a way that
-he faces the cross, to which he bows as often as he says \textit{Oremus} or the
-Holy Name.
+ministers, miter, crosier, book and candle bearers. Bishop stands in such a way
+that he faces the cross, to which he bows as often as he says \textit{Oremus}
+or the Holy Name.
 
-\rubric Bishop exorcises\footnote{This exocism is particular to making Gregorian
-Water.} the salt. Bishop then gives crosier away, D removes miter and blesses the
-salt with his hands joined.
+\rubric The Bishop exorcises the salt. The Bishop then gives crosier away,
+Deacon removes miter and blesses the salt with his hands joined.
 
 \rubric Bishop receives miter and crosier and exorcises the water.
 
-\rubric Crosier away. D removes miter and Bishop blesses the water with joined
-hands.
+\rubric Crosier away; the Deacon removes miter and Bishop blesses the water
+with joined hands.
 
-\rubric Bishop takes a handful of the blessed salt and drops it three times in the
-form of a cross into the water saying \textit{Commíxtio salis et aqu\ae\
+\rubric The Bishop takes a handful of the blessed salt and drops it three times
+in the form of a cross into the water saying \textit{Commíxtio salis et aqu\ae\
 páriter fiat: In nómine Pa\cross tris et Fí\cross lii, et Spíritus \cross\
 sancti. \rbar Amen.}
 
-\rubric D hands a towel to B; afterwards Bishop says with folded hands the oration
-\textit{Deus, invíct\ae.}
+\rubric The Deacon hands a towel to the Bishop; afterwards the Bishop says with
+folded hands the oration \textit{Deus, invíct\ae.}
 
 \section{Blessing of the Exterior of the Church.}
 
-\rubric Bishop resumes miter and returns with his ministers to the main entrance
-where he stands facing the door. The server in charge of the holy water
-transfers some of the Gregorian water into the aspersorium and then stands to
-the right of D. D removes miter and hands aspergil to B, who intones
-\textit{Asperges me}, which is continued by the chanters. Bishop sprinkles himself,
-the clergy and the bystanders.
+\rubric Bishop resumes miter and returns with his ministers to the main
+entrance where he stands facing the door. The server in charge of the holy
+water transfers some of the water into the aspersorium and then stands to the
+right of the Deacon. The Deacon removes miter and hands aspergil to the Bishop,
+who intones \textit{Asperges me}, which is continued by the chanters. The
+Bishop sprinkles himself, the clergy and the bystanders.
 
-\rubric CB and ACs stand to the right of B, who resumes miter. CB and ACs
-proceed Bishop and ministers around the outside of the church, epistle side first. B
-sprinkles in the form of a cross the \textit{upper part of the walls} of the
-church\footcite[The procession walks around and Bishop sprinkles the cemetery also
-if it be adjacent.][n. 41, p. 44.]{consecranda} saying continually: \textit{In
-nómine Pa\cross tris, et Fí\cross lii, et Spíritus \cross\ sancti,} not adding
-the word \textit{Amen}. The holy water bearer walks to the right of D and the
-people may follow B.\footcite[If it is impossible to go around the church, he
-sprinkles the wall at his right as far as he can, then, passing by the front of
-the church, he goes to the place at the other side of the church nearest the
-point at which he stoped on the right side and begins to sprinkle the walls
-from that point until he arrives at the main portal.][note 2, p.
+\rubric Cross-bearer and acolytes stand to the right of the Bishop, who resumes
+miter. Cross-bearer and acolytes proceed Bishop and ministers around the
+outside of the church, epistle side first. The Bishop sprinkles in the form of
+a cross the \textit{upper part of the walls} of the church\footcite[The
+procession walks around and Bishop sprinkles the cemetery also if it be
+adjacent.][n. 41, p. 44.]{consecranda} saying continually: \textit{In nómine
+Pa\cross tris, et Fí\cross lii, et Spíritus \cross\ sancti,} not adding the
+word \textit{Amen}. The holy water bearer walks to the right of the Deacon and
+the people may follow the Bishop.\footcite[If it is impossible to go around the
+church, he sprinkles the wall at his right as far as he can, then, passing by
+the front of the church, he goes to the place at the other side of the church
+nearest the point at which he stoped on the right side and begins to sprinkle
+the walls from that point until he arrives at the main portal.][note 2, p.
 44.]{consecranda}
 
 \rubric The chanters finish the antiphon and sing the resonsory
 \textit{Asperges me}, which is sung while Bishop sprinkles the outside of the
 church.
 
-\rubric Having arrived back at the main entrance, Bishop hands sprinkler to D, who
-passes it to the water carrier.\footnote{The water carrier ought to refill at
-this time.} D removes miter; CB and ACs stand at the right of B. When the
-chanters have finished Bishop faces the door of the church says \textit{Orémus,} D
-adds \textit{Flectámus génua,} and all make a simple
-genuflection.\footnote{Except CB, ACs and book and candle bearers.}
-Then\footnote{Subdeacon does not say \textit{Leváte} until everyone (or at
-least the bishop and those close to him) achieved a genuflecting position.} SD
-says \textit{Leváte} and all rise. Bishop says the oration \textit{Omnípotens
+\rubric Having arrived back at the main entrance, the Bishop hands the aspergil
+to the Bishop, who passes it to the water carrier.\footnote{The water carrier
+ought to refill at this time.} The Deacon removes miter; cross-bearer and
+acolytes stand at the right of the Bishop. When the chanters have finished
+Bishop faces the door of the church says \textit{Orémus,} the Deacon adds
+\textit{Flectámus génua,} and all make a simple genuflection.\footnote{Except
+the cross-bearer, acolytes and book and candle bearers.} Then\footnote{The
+subdeacon does not say \textit{Leváte} until everyone (or at least the bishop
+and those close to him) achieved a genuflecting position.} Subdeacon says
+\textit{Leváte} and all rise. Bishop says the oration \textit{Omnípotens
 sempitérne Deus.}
 
-\rubric Bishop resumes miter and receives the crosier, strikes the door
+\rubric The Bishop resumes miter and receives the crosier, strikes the door
 \textit{once} with the lower end of the crosier and says:
 
 \begin{quote}
     Attóllite portas príncipes vestras, et elevámini port\ae\ \ae ternáles: et
-    introíbit Rex glória\ae.
+    introíbit Rex glóri\ae.
 \end{quote}
 
 The Guard from the inside of the church\footcite[The door may be slightly open,
-so that the bishop and deacon can hear each other.][note 1, p.
+so that the Bishop and the Guard can hear each other.][note 1, p.
 46.]{consecranda} says in a loud tone:
 
 \begin{quote}
@@ -282,10 +293,12 @@ so that the bishop and deacon can hear each other.][note 1, p.
 Bishop answers in the same tone:
 
 \begin{quote}
-    Dóminus fortis, et potens: Dóminus potens in pr\ae lio.
+    Dóminus fortis, et potens: Dóminus potens in pr\'\ae lio.
 \end{quote}
 
-\rubric Bishop gives away crosier, receives sprinkler from D and goes around the
+% TODO: make the actions of the Bishop explicit in the rubrics
+
+\rubric Bishop gives away crosier, receives sprinkler from Deacon and goes around the
 church a second time, the same manner as before, but this time sprinkling the
 \textit{lower part of the walls} of the church. As soon as Bishop begins this second
 sprinkling chanters sing the responsory \textit{Benedic, Domine.}
@@ -311,7 +324,7 @@ time, after the Guard's interrogation, Bishop and all clergy answer:
 
 \rubric Bishop makes with the lower part of the crosier the sign of the cross on the
 threshold, saying \textit{Ecce cru\cross is signum, fugiant phantasmata
-cuncta.} The door is then opened by the Guard. B, D and SD enter the church and
+cuncta.} The door is then opened by the Guard. B, Deacon and Subdeacon enter the church and
 Bishop says in a loud tone \textit{Pax huic domui,} to which the Guard answers
 \textit{In introitu vestro,} and all the clergy answer \textit{Amen.}
 
@@ -329,7 +342,7 @@ terna} and \textit{Zach\ae\ efestinans.}
 \rubric CB and ACs stand at the epistle side of the faldstool, chanters stand
 at the lectern, Bishop with ministers stands before the faldstool, facing the high
 altar, and all the others stand near B. Upon the completion of the antiphons, B
-gives crosier to crosier-bearer and D removes miter and zucchetto. MC1 signals
+gives crosier to crosier-bearer and Deacon removes miter and zucchetto. MC1 signals
 all to kneel on both knees and Bishop intones the \textit{Veni Creator Spiritus},
 which is continued by the chanters. All rise at the end of the first strophe, D
 replaces B's zucchetto, and remain standing until the end of the hymn.
@@ -361,7 +374,7 @@ Deus} is repeated.][Note, p. 51.]{consecranda}
 
 \rubric The MC2 gets the Chart 1. After the chanters have sung \textit{Ut
 omnibus fidelibus defunctis,} etc., and those present have answered \textit{Te
-rogamus audi nos} B, D, SD and crosier-bearer rise. Bishop receives crosier and
+rogamus audi nos} B, D, Subdeacon and crosier-bearer rise. Bishop receives crosier and
 recites, using Chart 1, held by the subdeacon, alternately with all present:
 
 \begin{quote}
@@ -373,12 +386,12 @@ recites, using Chart 1, held by the subdeacon, alternately with all present:
 
 Bishop then raises his right hand and blesses the altar (altars) and church
 conjointly by making the sign of the cross towards the atlar as often as
-indicated in the invocations that follow. D raises the border of B's cope
+indicated in the invocations that follow. Deacon raises the border of B's cope
 whenever Bishop makes the sign of the cross. After the petitions, Bishop gives away cross
 and he and all who rose with him kneel and the Litany is sung to the last
 \textit{Kyrie eleison.}
 
-\rubric Ater the Litany, all rise; D removes miter. \textit{Oremus. Flectámus
+\rubric Ater the Litany, all rise; Deacon removes miter. \textit{Oremus. Flectámus
 génua. Leváte.} Bishop facing the altar says the two orations \textit{Pr\ae véniat
 nos} and \textit{Magnificáre.}
 
@@ -485,7 +498,7 @@ Bishop then recites the oration that follows.
 over the water.
 
 \rubric Bishop receives crosier and goes the the main door of the church accompanied
-by D and SD and predeced by CB and ACs. With the lower extremity of the
+by Deacon and Subdeacon and predeced by CB and ACs. With the lower extremity of the
 crosier, Bishop makes a cross on the inner side of the dorr on the upper part and
 another cross on the lower part. He then gives away the crosier and, retaining
 the miter and facing the door, he says the prayer \textit{Sit pósitis crux.}
@@ -534,26 +547,18 @@ which he signed with his thumb three times at the end:
     Fí\cross lii, et Spíritus \cross\ sancti. Pax tibi. 
 \end{quote}
 
-\rubric D receives the aspersorium from the cleric and holds it before B, and
+\rubric Deacon receives the aspersorium from the cleric and holds it before B, and
 SD holds before Bishop Chart 2 which contains the above formula. Having performed
 this rite  on the cneter of the mensa, Bishop repeats it with the same ceremonies
 and the same formula successively at the posterior corner of the gospel side,
 the anterior corner of the epistle side, the anterior corner of the gospel side
 and the posterior corner of the epistle side.
 
-\begin{center}
-    \begin{tabular}{ | l c r | }
-       \hline
-       \cross\ \textbf{2} &                    & \textbf{5} \cross\ \\
-                          & \cross\ \textbf{1} &                    \\
-       \cross\ \textbf{4} &                    & \textbf{3} \cross\ \\
-       \hline
-   \end{tabular} 
-\end{center}
+\crossplan
 
 D receives the towel from the cleric and hand it to the bishop who dries his
-thumb with it, after which Bishop hands towel back to D who hadns it and the
-aspersorium to the cleric. MC2 receives Chart 2 from SD.
+thumb with it, after which Bishop hands towel back to Deacon who hadns it and the
+aspersorium to the cleric. MC2 receives Chart 2 from Subdeacon.
 
 \rubric Bishop goes to the middle of the altar and remians standing on the predella.
 When the chanters have repeated the antiphons after the psalm, miter removed.
@@ -567,10 +572,10 @@ Cart 2 to the mensa.
 \rubric Bishop intons the antiphon \textit{Asperges me} (these two words only) which
 the chanters continue to the end, after which they sing the first three verses
 of the psalm \textit{Miserere.} After intoning, Bishop resumes miter, receives the
-aspergil from D and sprinkles the support and mensa conjointly. Bishop begins in
+aspergil from Deacon and sprinkles the support and mensa conjointly. Bishop begins in
 front at the middle of the altar, proceeds to the epistle side, passes behind
 the altar and returns by the gospel side to the iddle at the front of the
-altar. Bishop is accompanied by D, SD and AC with aspersorium.\footcite[If the back
+altar. Bishop is accompanied by D, Subdeacon and AC with aspersorium.\footcite[If the back
 part of the altar is attached to the wall, so that the bishop cannot go around
 it, he sprinkles only the \textit{base} of the base of the altar when passing
 from the middle to the epistle corner, then the epistle side of the altar,
@@ -612,7 +617,7 @@ The \textit{Glória Patri} is not sung.
 
 \rubric At the middle of the altar, after the seventh sprinkling, Bishop descends
 from the predella to the foot of the altar. Proceeded by CB and ACs,
-accompanied by D, SD and AC with aspersorium, Bishop goes behind the altar. Once
+accompanied by D, Subdeacon and AC with aspersorium, Bishop goes behind the altar. Once
 chanters begin the \textit{H\ae c est domus} Bishop begins to sprinkle the lower
 part of the wall, commencing at the middle behind the altar and then, preceded
 by the CB and ACs, he passes donw the \textit{gospel} side and returns by the
@@ -637,7 +642,7 @@ began. He sprinkles the upper part of the wall. No \textit{Glória Patri} after
 the psalm and the antiphon is not repeated.
 
 \rubric Bishop returns to the foot of the altar. When chanters intone the antiphon
-\textit{Domus mea} B, preceded by CB and ACs and accompanied by D, SD and
+\textit{Domus mea} B, preceded by CB and ACs and accompanied by D, Subdeacon and
 server with the Gregorian water, goes from the altar to the mian door of the
 church sprinkling the floor; then he goes to the middle fo thewall at the
 gospel side and passes in a direct line to the middle of the wall on the
@@ -702,7 +707,7 @@ the relics are exposed, in the following order:
     \item Server carrying the vase of Chrism and some absorbent cotton on a
         salver;\footnote{Cotton sheets (woven and unwoven) are superior to
         cotton balls in this case.}
-    \item B, between D and SD;
+    \item B, between Deacon and Subdeacon;
     \item Miter, crosier, book an candle-bearers.
 \end{enumerate}
 
@@ -740,7 +745,7 @@ are carried in procession to the church in the following order:
     \item Two or Four Priests vested in red chasubles carrying the relics on a
         bier;\footcite[Instead of these priets the consecrator may carry the
         relics on s salver.][footnote 1, p. 81.]{consecranda}
-    \item Bishop with miter and crosier between D and SD;
+    \item Bishop with miter and crosier between Deacon and Subdeacon;
     \item Miter, Crosier, Book and Candle bearers;
     \item Laity.
 \end{enumerate}
@@ -762,7 +767,7 @@ and sits on the faldstool, after which he may give an exhortation to the
 people.\footcite[The exhortation here spoken of, the decrees of the Council of
 Trent which according to the Pontifical are now read by the archdeacon (any
 priest), the address of the Bishop to the founder of the church and the
-latter's reply may be omitted. --- S.R.C., May 17, 1890, n. 3729 ad
+latter's reply may be omitted. --- \src, May 17, 1890, n. 3729 ad
 VIII.][footnote 2, p. 82.]{consecranda}
 
 \rubric The bishop remains sitting while the chanters sing the responsory
@@ -776,7 +781,7 @@ reads the prayer \textit{Domum tuam.}
 his cope, the Bishop goes to the right side of the door. He dips his thumb into
 the Chrism and anoints three times the sotne pillar at the place where the
 cross is scuptured,\footcite[The Pontifical says ''\textit{signat ostium,''}
-which the S.R.C., Aug. 7, 1875, n. 3364 ad VI, interprets to mean the two stone
+which the \src, Aug. 7, 1875, n. 3364 ad VI, interprets to mean the two stone
 or brick pillars at the sides of the door.][footnote 1, p. 83.]{consecranda}
 saying:
 
@@ -945,15 +950,7 @@ in the form of a cross the table of the altar \textit{once}:
     \item at the posterior corner of the epistle side.
 \end{enumerate}
 
-\begin{center}
-    \begin{tabular}{ | l c r | }
-       \hline
-       \cross\ \textbf{2} &                    & \textbf{5} \cross\ \\
-                          & \cross\ \textbf{1} &                    \\
-       \cross\ \textbf{4} &                    & \textbf{3} \cross\ \\
-       \hline
-   \end{tabular} 
-\end{center}
+\crossplan
 
 \rubric The Deacon takes the thurible from the Bishop and hands it to the
 thurifer. The Bishop imposes incense in the usual manner. The Bishop again
@@ -994,15 +991,7 @@ stands at the right of the deacon. After intoning the antiphon the Bishop
 anoints with the \textit{Oleum Catechumenorum} the table of the altar in the
 form of a cross in the middle and at the four corners in the following order:
 
-\begin{center}
-    \begin{tabular}{ | l c r | }
-       \hline
-       \cross\ \textbf{2} &                    & \textbf{5} \cross\ \\
-                          & \cross\ \textbf{1} &                    \\
-       \cross\ \textbf{4} &                    & \textbf{3} \cross\ \\
-       \hline
-   \end{tabular} 
-\end{center}
+\crossplan
 
 pronouncing the following form at \textit{each} unction:
 
@@ -1472,7 +1461,7 @@ absorbent cotton, etc., are removed.
         added which are not omitted even on double feasts of the first class,
         i.e., Sundays, major ferials, octave-days (not days \textit{within} an
         octave) and days within the privileged octaves of Christmas, Epiphany,
-        and \textit{Corpus Christi.} --- S.R.C., Feb. 23, 1884, n. 36.05, III
+        and \textit{Corpus Christi.} --- \src, Feb. 23, 1884, n. 36.05, III
         ad 1.} \textit{Credo;} Preface, either \textit{de Octava} if it is
         \textit{proper,} otherwise \textit{de Trinitate} or \textit{Communis}
         according as the consecration takes place on a Sunday or week-day;
@@ -1516,7 +1505,7 @@ absorbent cotton, etc., are removed.
                 Tuesday), Ascension, Pentecost (Sunday, Monday, Tuesday),
                 \textit{Corpus Christi;}
 
-            \item Ash-Wednesday and during Holy Week.\footnote{S.R.C., Feb. 23,
+            \item Ash-Wednesday and during Holy Week.\footnote{\src, Feb. 23,
                 1884, n. 3605, III ad 3.}
 
         \end{enumerate}
@@ -1561,7 +1550,7 @@ manner, \textit{at the altar} if he is the celebrant of the Mass.
 \section{Divine Office on the Feast and during the Octave.}
 
 \rubric The Consecrator, even if he is not the Ordinary, may (is not obliged)
-recite the \textit{Officium de Dedicatione.}\footnote{S.R.C., May 7, 1746,
+recite the \textit{Officium de Dedicatione.}\footnote{\src, May 7, 1746,
 n.2390 ad III.}
 
 \section{Anniversary of the Consecration.}
