@@ -9,7 +9,8 @@
 \usepackage{csquotes}
 \usepackage{relsize,etoolbox}% http://ctan.org/pkg/{relsize,etoolbox}
 \AtBeginEnvironment{quote}{\smaller}% Step font down one size relative to current font.
-\usepackage[backend=biber,style=reading,style=verbose-ibid]{biblatex}
+% \usepackage[backend=biber,style=reading,style=verbose-ibid]{biblatex}
+\usepackage[backend=biber,style=reading,style=apa]{biblatex}
 \addbibresource{~/Library/texmf/bibtex/bib/rubrics.bib}
 
 \newcommand\blessincense{
@@ -22,9 +23,9 @@
 \begin{center}
     \begin{tabular}{ | l c r | }
        \hline
-       \cross\ \textbf{1} &                    & \textbf{4} \cross\ \\
-                          &       \cross\      &                    \\
-       \cross\ \textbf{3} &                    & \textbf{2} \cross\ \\
+        \cross\ {\small 1} &        & {\small 4} \cross\ \\
+                           & \cross &           \\
+        \cross\ {\small 3} &        & {\small 2} \cross\ \\
        \hline
    \end{tabular} 
 \end{center}
@@ -44,7 +45,7 @@ consecration. The candles on the table in the oratory are lit.
 
 \rubric Assisting clergy with surplices, preceded by a server with holy-water,
 go to the entrance of the oratory to receive the Bishop, vested in rochet and
-mantelletta, with biretta. The Bishop removes biretta at the entrace and
+mantelletta, with biretta. The Bishop removes his biretta at the entrace and
 receives holy water from the rector.\footcite[The bishop does not sprinkle the
 clergy, as the rubrics prescribe, if he be not the Ordinary. See][note 1, p.
 28.]{consecranda}
@@ -1582,6 +1583,10 @@ Postcommunion at Mass), proper of the consecration.
 
 }
 
+\nocite{levav:churchconsecration}
+\nocite{ml:1947}
+\nocite{ml:1959}
+\nocite{rc:ecclesiae}
 \printbibliography
     
 \end{document}
