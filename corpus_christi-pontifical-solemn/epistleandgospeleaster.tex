@@ -1,0 +1,96 @@
+% !TEX program = lualatex
+% !TEX encoding = UTF-8
+
+\documentclass[20pt, extrafontsizes]{memoir}
+
+\usepackage[letterpaper,vmargin={1in,1in},hmargin={1in,1in}]{geometry}
+
+\usepackage{fullpage}
+\usepackage{microtype}
+\usepackage{fontspec}
+
+\usepackage{gregoriotex}
+\gresetlinecolor{gregoriocolor}
+\grechangestaffsize{27}
+\gresetlinesbehindpunctumcavum{visible}
+\grechangestafflinethickness{50}
+\grechangedim{spacelinestext}{2.7ex}{fixed}
+\grechangedim{spaceabovelines}{1.9ex}{scalable}
+\gresetgregoriofont[op]{greciliae}
+
+%\let\grelocalleftbox\localleftbox
+%\let\grelocalrightbox\localrightbox
+
+\usepackage[latin]{babel}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Libertinus Serif}
+\usepackage{Carrickc,lettrine}
+\renewcommand\LettrineFontHook{\Carrickcfamily}
+
+\pagestyle{empty}
+\begin{document}
+\setlength{\parindent}{0pt}
+\gresetbracerendering{font} 
+
+\centerline{\normalfont\scshape Epistola in}
+
+\vspace{.2cm}
+\centerline{\LARGE\scshape Dominica Resurrectionis}
+
+\vspace{.2cm}
+\centerline{\color{gregoriocolor}\greseparator{2}{17}}
+
+\gresetinitiallines{1}
+\gabcsnippet[n]{
+(c4) <c>L</c>é(g)cti(h)o(i) E(i)pí(i)sto(i)læ(i) be(i)á(i)ti(i) Pau(j)li(i) A(i)pó(h)sto(i)li(i.) (,) ad(ivHGh) Co(dh)rín(g)thi(g)os.(g.) (::)
+<c>F</c>ra(g@hw!ij)tres :(i.) (,) Ex(i)pur(i)gá(i)te(i) ve(i)tus(h) fer(i)mén(j)tum,(i.) (,) 
+ut(i) si(i)tis(i) no(i)va(h) con(i)spér(j)si(i)o,(i.) (,) 
+si(i)cut(i) es(ivHGh)tis(dh) á(g)zy(g)mi.(g.) (:)
+E(g)te(e)nim(d) (,) Pas(g)cha(h) nos(h)trum(g.) (,) im(i)mo(i)lá(ivHG)tus(h) est(dh) Chris(g.)tus.(g.) (:)
+I(g)ta(h)que(i) e(h)pu(i)lé(j)mur:(i.) (,)
+non(i) in(i) fer(i)mén(h)to(i) vé(j)ter(i)i,(i.) (,)
+ne(i)que(i) in(i) fer(i)mén(i)to(h) ma(i)lí(j)ti(i)æ(i.) (,) et(ivHGh) ne(dh)quí(g)ti(g)æ :(g.) (:)
+sed(j) in(ih) á(j)zy(i)mis(i) sin(i)ce(h)ri(g)tá(g@hwi)tis(i.) (,) et(k) ve(jkl)ri(ivHG)tá(h.)tis.(g.) (::)
+}
+
+\pagebreak
+
+\centerline{\normalfont\scshape Evangelium in}
+
+\vspace{.2cm}
+\centerline{\LARGE\scshape Dominica Resurrectionis}
+
+\vspace{.5cm}
+\centerline{\color{gregoriocolor}\greseparator{2}{17}}
+
+\gresetinitiallines{0}
+\grechangestyle{initial}{\Lettrine}
+\gabcsnippet[n]{
+(cb4) <nlba><c>D</c>ó(fgf)mi(gh)nus(h.) vo(ivHGivHF)bí(gf)scum.(f.) (::)
+<c>E</c>t(i) cum(hg) spí(i)ri(h)tu(f) tu(gf)o.(f.) (::)</nlba>
+<c>S</c>e(fj!@kj)quén(ih)ti(gh)a(h.) (,) San(i)cti(i) E(ivHG)van(ijf)gé(g)li(f)i(f) (;) se(i)cún(ivHG)dum(ijf) Mar(gf)cum.(f.) (::)
+<c>G</c>ló(i)ri(h)a(g) ti(i)bi(hf) Dó(g)mi(f)ne.(f.) (::)
+<c>I</c>n(f) il(g)lo(f) tém(g)po(h)re :(h) (,) 
+Ma(h)rí(h)a(h) Mag(h)da(h)lén(h)e(h) et(h) Ma(h)rí(h)a(h) Ja(h)có(h)bi(h) et(h) Sa(h)ló(h)me(h) e(h)mé(ivHG)runt(ih~) a(gf)ró(gh)ma(h)ta,(h) (;) 
+ut(h) ve(h)ni(h)én(h)tes(hi) ún(jvIH)ge(ih~)rent(gf) Je(gf)sum.(f.) (:) 
+Et(f) val(g)de(f) ma(g)ne(h) u(h)na(h) sab(h)ba(h)tó(i)rum,(h) (,)
+ve(h)ni(h)unt(h) ad(h) mo(h)nu(h)mén(h)tum,(hi) or(jvIH)to(ih~) jam(gf) so(gf)le.(f.) (:)  
+Et(f) di(g)cé(f)bant(g) ad(h) ín(h)vi(h)cem :(h) (,)
+Quis(g) re(g)vól(g)vet(g) no(g)bis(g) lá(g)pi(g)dem(g) ab(g) ós(g)ti(g)o(h) mo(i)nu(j)mén(kV!jj!i)ti?(j.) (:)
+Et(f) res(g)pi(f)ci(g)én(h)tes(h) vi(h)dé(h)runt(h) re(h)vo(hi)lú(jvIH)tum(gf) lá(g)pi(f)dem.(f.) (::)
+E(f)rat(g) quip(h)pe(hi) magn(jvIH)us(gf) val(gf)de.(f.) (::)
+Et(f) in(g)tro(f)e(g)ún(h)tes(h) in(h) mo(h)nu(h)mén(h)tum(h) vi(h)dé(h)runt(h) jú(h)ven(h)em(h) se(h)dén(h)tem(h) in(h) dex(h)tris,(h) co(h)o(h)pér(h)tum(h) sto(h)la(h) cán(i)di(h)da,(h) (,)
+et(h) ob(hi)stu(jvIH)pu(gf)é(gf)runt.(f.) (:)
+Qui(f) di(g)cit(f) il(g)lis :(h) (,)
+No(h)lí(ivHG)te(ih) ex(g)pa(f)vé(gh)sce(h)re :(h.) (;)
+Je(h)sum(h) quǽ(h)ri(h)tis(h) Na(h)za(h)ré(h)num,(h) cru(h)ci(h)fíx(i)um :(h) (,)
+sur(h)réx(ivHG)it,(ih~) non(gf) est(gh) hic,(h.) (;)
+ec(h)ce(h) lo(h)cus,(h) u(h)bi(h) po(h)su(hi)é(jvIH)runt(gf) e(gf)um.(f.) (:)
+Sed(f) i(g)te,(f) dí(g)ci(h)te(h) di(h)scí(h)pu(h)lis(h) e(h)jus(h) et(h) Pe(i)tro,(h) (,)
+qui(h)a(h) præ(h)cé(h)dit(h) vos(h) in(ivHG) Ga(ih~)li(gf)lǽ(gh)am :(h.) (;)
+i(h)bi(h) e(h)um(h) vi(h)dé(h)bi(h)tis,(h) si(ih)cut(gf) di(fh!jkjjvIGh.jvIHFgf.)xit(giHGh) vo(fgf)bis.(f.) (::)
+}
+
+\end{document}
